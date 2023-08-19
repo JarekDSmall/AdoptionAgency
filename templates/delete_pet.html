@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete {{ pet.name }}</title>
+</head>
+<body>
+    <h1>Delete {{ pet.name }}</h1>
+    <p>Are you sure you want to delete {{ pet.name }}?</p>
+    <form method="POST">
+        <button type="submit">Delete</button>
+    </form>
+    <a href="{{ url_for('homepage') }}">Cancel</a>
+</body>
+</html>
+
